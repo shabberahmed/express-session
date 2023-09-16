@@ -3,12 +3,12 @@ import mongoose from "mongoose";
 const cartItemSchema = new mongoose.Schema({
   userId: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'user', // Reference to the User model
+    ref: 'user', 
   },
-  productId: mongoose.Schema.Types.ObjectId, // Direct reference to ObjectId
+  productId: mongoose.Schema.Types.ObjectId, 
   quantity: {
     type: Number,
-    default: 1, // You can adjust this default value as needed
+    default: 1, 
   },
 });
 

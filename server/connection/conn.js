@@ -4,11 +4,10 @@ import MongoDBStore from "connect-mongodb-session";
 
 const MongoDBStoreSession = MongoDBStore(session);
 
-// Initialize MongoDBStore with your MongoDB connection
 const store = new MongoDBStoreSession({
-  uri: process.env.CONNECTION, // Replace with your MongoDB URI
-  collection: "CartItem", // Collection name to store sessions
-  expires: 1000 * 60 * 60 * 24 * 7, // Session expiration time (e.g., 1 week)
+  uri: process.env.CONNECTION, 
+  collection: "CartItem", 
+  expires: 1000 * 60 * 60 * 24 * 7, 
 
 });
 
